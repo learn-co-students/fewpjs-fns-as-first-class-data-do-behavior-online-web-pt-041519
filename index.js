@@ -26,6 +26,9 @@ function  greet(time) {
 
 //update the text inside the #greeting node with the content of the first argument.
 
-function displayMessage(message) {
-  document.getElementById('greeting')
+let text = "TEST";
+
+function displayMessage(text) {
+  let content  = document.getElementById('greeting');
+  content.innerText = `${text}`;
 }
