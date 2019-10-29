@@ -6,14 +6,14 @@ function handleClick(e) {
 }
 
 function greet(timeString) {
-  const timeInt = timeString.parseInt(timeString, 10);
+  const timeInt = parseInt(timeString, 10);
   if (timeInt < 12) return "Good Morning";
   if (timeInt < 17) return "Good Afternoon";
   return "Good Evening";
 
 }
 
-function DisplayMessage(message) {
+function displayMessage(message) {
   document.getElementById("greeting").innerText = message;
 }
 
